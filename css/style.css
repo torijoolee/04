@@ -27,6 +27,7 @@ img {
   z-index: 100;
 }
 .logo {
+  all: unset;
   background-image: url(/nateolimg/logo.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -34,18 +35,20 @@ img {
   width: 100%;
   height: 34px;
   color: transparent;
+  cursor: pointer;
 }
 .toggle {
   all: unset;
   background-image: url(/nateolimg/bar.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 20px;
   background-position: center;
-  height: 14px;
+  height: 100%;
   line-height: 55px;
   position: absolute;
   left: 10px;
   color: transparent;
+  cursor: pointer;
 }
 .card {
   position: relative;
@@ -94,7 +97,7 @@ img {
   opacity: 0.9;
 }
 .img-text {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: regular;
   font-weight: lighter;
   text-transform: uppercase;
@@ -191,4 +194,49 @@ section img:hover {
   bottom: 2.5rem;
   font-size: 0.9rem;
   font-weight: 400;
+}
+/* toggle menu */
+.menu-open {
+  background-color: #1b1b1b;
+  width: 0;
+  height: 100vh;
+  padding-top: 55px;
+  position: fixed;
+  z-index: 99;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.menu-open ul,
+.menu-link {
+  padding: 2.5rem;
+  min-width: 200px;
+}
+.menu-open li a {
+  color: #d8d8d8;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s linear;
+}
+.menu-open li a:hover {
+  color: var(--color-yellow);
+}
+.menu-open li {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 4px;
+}
+.sns {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  /* background-color: #d9d5c8; */
+  margin-right: 1rem;
+}
+.menu-open.active {
+  width: 100%;
+  opacity: 1;
 }
