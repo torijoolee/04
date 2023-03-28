@@ -72,37 +72,62 @@
     color: transparent;
     cursor: pointer;
   }
-  .inner-text {
-    line-height: 300%;
-  }
+
   .img-title {
     font-size: 3.3rem;
   }
   .img-text {
     font-size: 1.3rem;
   }
-  .cover {
+  .header .inner-text {
     padding: 3rem;
     padding-bottom: 4rem;
+    line-height: 300%;
   }
-  /* disney */
-  .disney {
+  /* disney, store*/
+  .disney,
+  .store {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
   }
-  .cover {
+  .disney .cover,
+  .store .cover,
+  .magazine .cover {
     width: 100%;
+    font-size: 2rem;
   }
-  .disney-item {
+  .h2 {
+    margin-top: 4em;
+    letter-spacing: 8px;
+  }
+  .disney > .cover,
+  .store > .cover,
+  .magazine > .cover {
+    padding-left: 5px;
+    font-size: 2.5rem;
+  }
+  h2::before {
+    height: 28px;
+    top: 2px;
+  }
+  .disney-item,
+  .store-item {
     width: calc(50% - 6px);
   }
+
   .card {
     padding-left: 3px;
     padding-right: 3px;
   }
-
-  .disney-item:last-of-type {
+  .disney-item:last-of-type,
+  .store-item:last-of-type {
     width: 100%;
+  }
+
+  .disney .disney-item:not(:last-child) .img-title,
+  .store .store-item:not(:last-child) .img-title {
+    font-size: 2.5rem;
+    line-height: 90%;
   }
 }
