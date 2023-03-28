@@ -86,7 +86,7 @@
   .header .inner-text {
     padding: 3rem;
     padding-bottom: 4rem;
-    line-height: 300%;
+    line-height: 320%;
   }
   /* disney, store*/
   .disney,
@@ -132,7 +132,7 @@
   .disney .disney-item:not(:last-child) .img-title,
   .store .store-item:not(:last-child) .img-title {
     font-size: 2.5rem;
-    line-height: 90%;
+    line-height: 70%;
   }
   .footer {
     height: 420px;
@@ -155,5 +155,8 @@
   }
   .footer .menu li:last-child::after {
     content: none;
+  }
+  .footer.cover {
+    padding: 0;
   }
 }
