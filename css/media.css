@@ -1,4 +1,4 @@
-@media (min-width: 960px) {
+@media (min-width: 1200px) {
   .pc-cover {
     padding: 0 120px;
     box-sizing: border-box;
@@ -6,15 +6,18 @@
   .logo {
     background-image: url(/nateolimg/toplogo.png);
     background-position: 0;
+    position: fixed;
   }
   .toggle {
     display: none;
   }
   .nav-pc {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: nowrap;
-    width: 150%;
+    margin-left: auto;
+    width: 70%;
+    min-width: 780px;
   }
   .nav-pc a {
     color: white;
@@ -40,7 +43,7 @@
   }
   .control {
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: 100%;
   }
   .card-btn {
@@ -68,5 +71,38 @@
     background-position: center;
     color: transparent;
     cursor: pointer;
+  }
+  .inner-text {
+    line-height: 300%;
+  }
+  .img-title {
+    font-size: 3.3rem;
+  }
+  .img-text {
+    font-size: 1.3rem;
+  }
+  .cover {
+    padding: 3rem;
+    padding-bottom: 4rem;
+  }
+  /* disney */
+  .disney {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .cover {
+    width: 100%;
+  }
+  .disney-item {
+    width: calc(50% - 6px);
+  }
+  .card {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .disney-item:last-of-type {
+    width: 100%;
   }
 }
