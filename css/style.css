@@ -56,7 +56,7 @@ img {
   width: 100%;
 }
 .cover {
-  padding: 0.8rem;
+  padding: 1rem;
 }
 .inner-text p {
   font-weight: light;
@@ -130,4 +130,7 @@ section img {
   width: 100%;
   background-color: #151515;
   margin-top: 6rem;
+  text-transform: uppercase;
+  color: gray;
+  font-weight: lighter;
 }
