@@ -154,6 +154,7 @@ section img:hover {
 .footer a {
   color: #898989;
   text-decoration: none;
+  transition: all 0.2s linear;
 }
 .footer a:hover {
   color: var(--color-yellow);
@@ -183,11 +184,11 @@ section img:hover {
   letter-spacing: 2px;
   text-transform: capitalize;
   font-size: 0.9rem;
-  margin-top: 1rem;
+  margin-top: 0.9rem;
 }
 .end {
   position: absolute;
-  bottom: 2rem;
+  bottom: 2.5rem;
   font-size: 0.9rem;
   font-weight: 400;
 }
