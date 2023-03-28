@@ -37,6 +37,9 @@ img {
   color: transparent;
   cursor: pointer;
 }
+.nav-pc {
+  display: none;
+}
 .toggle {
   all: unset;
   background-image: url(/nateolimg/bar.png);

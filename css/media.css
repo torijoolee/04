@@ -1,0 +1,46 @@
+@media (min-width: 960px) {
+  .pc-cover {
+    padding: 0 120px;
+    box-sizing: border-box;
+  }
+  .logo {
+    background-image: url(/nateolimg/toplogo.png);
+    background-position: 0;
+  }
+  .toggle {
+    display: none;
+  }
+  .nav-pc {
+    display: flex;
+    justify-content: space-between;
+    width: 150%;
+  }
+  .nav-pc a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    letter-spacing: 2.5px;
+  }
+
+  .nav-pc li a::after {
+    content: "";
+    display: inline-block;
+    height: 14px;
+    width: 1px;
+    background-color: var(--color-yellow);
+    position: relative;
+    top: 1px;
+    margin: 0 1.2em;
+  }
+
+  .toggle-pc {
+    background-image: url(/nateolimg/bar.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    color: transparent;
+    cursor: pointer;
+  }
+}
