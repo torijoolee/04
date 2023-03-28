@@ -97,7 +97,7 @@
     width: 100%;
     font-size: 2rem;
   }
-  .h2 {
+  h2 {
     margin-top: 4em;
     letter-spacing: 8px;
   }
@@ -129,5 +129,23 @@
   .store .store-item:not(:last-child) .img-title {
     font-size: 2.5rem;
     line-height: 90%;
+  }
+  .footer {
+    height: 420px;
+  }
+  .footer .menu {
+    display: flex;
+    padding-top: 3rem;
+  }
+  .footer .menu li::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #898989;
+    margin: 0 2rem;
+    opacity: 0.65;
+    position: relative;
+    top: 3px;
   }
 }
