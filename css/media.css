@@ -1,23 +1,27 @@
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .pc-cover {
-    padding: 0 120px;
+    max-width: 1200px;
     box-sizing: border-box;
+    margin: 0 auto;
   }
   .logo {
     background-image: url(/nateolimg/toplogo.png);
     background-position: 0;
-    position: fixed;
   }
   .toggle {
     display: none;
   }
+  .nav {
+    /* background-color: #fff; */
+    justify-content: center;
+  }
   .nav-pc {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
     flex-wrap: nowrap;
     margin-left: auto;
-    width: 70%;
-    min-width: 780px;
+    width: 100%;
+    min-width: 800px;
   }
   .nav-pc a {
     color: white;
@@ -109,7 +113,7 @@
   }
   h2::before {
     height: 28px;
-    top: 2px;
+    top: 1px;
   }
   .disney-item,
   .store-item {
