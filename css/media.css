@@ -13,6 +13,7 @@
   .nav-pc {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
     width: 150%;
   }
   .nav-pc a {
@@ -33,6 +34,31 @@
     position: relative;
     top: 1px;
     margin: 0 1.2em;
+  }
+  .card {
+    position: relative;
+  }
+  .control {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  .card-btn {
+    width: 50px;
+    height: 80px;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .prev {
+    position: absolute;
+    left: 0;
+    background-image: url(/nateolimg/ar-left.png);
+  }
+  .next {
+    position: absolute;
+    right: 0;
+    background-image: url(/nateolimg/ar-right.png);
   }
 
   .toggle-pc {
