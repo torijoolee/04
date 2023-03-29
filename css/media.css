@@ -172,10 +172,6 @@
     height: 100vh;
   }
 
-  /* .pc-menu-wrapper.active {
-    opacity: 1;
-    display: block;
-  } */
   .pc-menu-list button {
     all: unset;
     position: absolute;
@@ -194,17 +190,11 @@
     transition: all 0.5s linear;
   }
 
-  /* .scroll-control {
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
-  } */
   .pc-menu-list {
-    height: 100vh;
+    height: 100%;
     background-color: #1b1b1b;
     position: absolute;
     right: 0;
-    top: 0;
     z-index: 3000;
     padding: 2.5rem;
     padding-top: 9em;
@@ -216,6 +206,8 @@
   .pc-menu-list.active {
     opacity: 1;
     width: 480px;
+    position: fixed;
+    top: 0;
   }
   .pc-menu-list a {
     text-decoration: none;

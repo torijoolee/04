@@ -209,6 +209,7 @@ section img:hover {
   position: fixed;
   z-index: 99;
   overflow: hidden;
+  opacity: 0;
   transition: all 0.5s ease-out;
 }
 .menu-open ul,

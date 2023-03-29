@@ -35,7 +35,7 @@
       toggleClose.style.opacity = 1;
       toggleClose.style.right = "475px";
       toggleClose.style.width = "50px";
-      toggleClose.style.transform = rotate("90deg");
+      toggleClose.style.transform = rotate("180deg");
       toggleClose.style.transition = "0.5s";
     }
   });
