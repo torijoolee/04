@@ -56,16 +56,19 @@ img {
   color: transparent;
   cursor: pointer;
 }
-.card {
-  position: relative;
+
+.header {
+  margin-bottom: 50px;
+  padding-top: 55px;
+  width: 500vw;
 }
+
 .inner-text {
   position: absolute;
   left: 0;
   bottom: 0;
   color: white;
   line-height: 180%;
-  width: 100%;
 }
 .cover {
   padding: 1.4rem;
@@ -108,10 +111,6 @@ img {
   text-transform: uppercase;
 }
 
-.header {
-  margin-bottom: 50px;
-  padding-top: 55px;
-}
 /* section */
 h2 {
   font-size: 1.3rem;

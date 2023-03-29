@@ -42,31 +42,31 @@
     top: 1px;
     margin: 0 1.2em;
   }
-  .card {
+
+  .header {
     position: relative;
-  }
-  .control {
-    position: absolute;
-    top: 45%;
     width: 100%;
-    cursor: pointer;
+    height: 100%;
   }
+
   .card-btn {
+    position: absolute;
+    top: 50%;
     width: 50px;
     height: 80px;
-    background-color: black;
+    background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 3000;
   }
   .prev {
-    position: absolute;
-    left: 0;
     background-image: url(/nateolimg/ar-left.png);
+    left: 0;
   }
   .next {
-    position: absolute;
-    right: 0;
     background-image: url(/nateolimg/ar-right.png);
+    right: 0;
   }
 
   .toggle-pc {
@@ -77,17 +77,18 @@
     color: transparent;
     cursor: pointer;
   }
-
+  .img-wrap {
+    display: flex;
+    width: 500%;
+  }
+  .card {
+    position: relative;
+  }
   .img-title {
     font-size: 3.3rem;
   }
   .img-text {
     font-size: 1.3rem;
-  }
-  .header .img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
   }
   .header .inner-text {
     padding: 3rem;
@@ -99,6 +100,7 @@
     bottom: 5%;
     left: 50%;
     width: 100%;
+    z-index: 1000;
   }
   .show-currnet-page span {
     display: inline-block;
