@@ -49,6 +49,7 @@
     position: absolute;
     top: 45%;
     width: 100%;
+    cursor: pointer;
   }
   .card-btn {
     width: 50px;
@@ -83,10 +84,32 @@
   .img-text {
     font-size: 1.3rem;
   }
+  .header .img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   .header .inner-text {
     padding: 3rem;
     padding-bottom: 4rem;
     line-height: 320%;
+  }
+  .show-currnet-page {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 100%;
+  }
+  .show-currnet-page span {
+    display: inline-block;
+    width: 5px;
+    height: 18px;
+    background-color: #cacaca;
+    margin: 10px;
+    border-radius: 2px;
+  }
+  .show-currnet-page span.active {
+    background-color: var(--color-yellow);
   }
   /* disney, store*/
   .disney,
