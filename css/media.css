@@ -159,4 +159,78 @@
   .footer.cover {
     padding: 0;
   }
+  /* pc toggle */
+  .darkbg {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* .pc-menu-wrapper.active {
+    opacity: 1;
+    display: block;
+  } */
+  .pc-menu-list button {
+    all: unset;
+    position: absolute;
+    right: 0;
+    z-index: 3000;
+    top: 50px;
+    background-image: url(/nateolimg/ico-close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    width: 0;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transform: rotate("0deg");
+    transition: all 0.5s linear;
+  }
+
+  /* .scroll-control {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+  } */
+  .pc-menu-list {
+    height: 100vh;
+    background-color: #1b1b1b;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3000;
+    padding: 2.5rem;
+    padding-top: 9em;
+    width: 0;
+    opacity: 0;
+    pointer-events: fill;
+    transition: all 0.5s linear;
+  }
+  .pc-menu-list.active {
+    opacity: 1;
+    width: 480px;
+  }
+  .pc-menu-list a {
+    text-decoration: none;
+    color: #d9dad9;
+    display: block;
+  }
+
+  .pc-menu-list a:hover {
+    color: var(--color-yellow);
+  }
+  .pc-menu-list li {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+    letter-spacing: 4px;
+  }
 }

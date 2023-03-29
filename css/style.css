@@ -42,6 +42,7 @@ img {
 .nav-pc {
   display: none;
 }
+
 .toggle {
   all: unset;
   background-image: url(/nateolimg/bar.png);
@@ -208,8 +209,7 @@ section img:hover {
   position: fixed;
   z-index: 99;
   overflow: hidden;
-  opacity: 0;
-  transition: all 0.5s linear;
+  transition: all 0.5s ease-out;
 }
 .menu-open ul,
 .menu-link {
@@ -243,4 +243,10 @@ section img:hover {
 .menu-open.active {
   width: 100%;
   opacity: 1;
+}
+.pc-menu-list {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
 }
